@@ -29,3 +29,6 @@ RUN cp /force_tool/ant-salesforce.jar /usr/share/ant/lib
 # install jenkins plugins
 USER jenkins
 RUN /usr/local/bin/install-plugins.sh junit git git-client ssh-slaves greenballs chucknorris
+
+# recommended to install pipeline plugin through GUI to ensure dependencies are
+# installed correctly - https://stackoverflow.com/questions/34722609/error-when-installing-jenkins-workflow-plugin
