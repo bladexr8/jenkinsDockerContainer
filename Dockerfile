@@ -18,10 +18,10 @@ RUN echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers
 RUN apt-get install -qqy ant
 
 # get Force.com Migration Tool
-RUN wget https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_37.0.zip
+RUN wget https://gs0.salesforce.com/dwnld/SfdcAnt/salesforce_ant_39.0.zip
 RUN mkdir /force_tool
-RUN unzip salesforce_ant_37.0.zip -d /force_tool/
-RUN rm salesforce_ant_37.0.zip
+RUN unzip salesforce_ant_39.0.zip -d /force_tool/
+RUN rm salesforce_ant_39.0.zip
 
 # copy ant-salesforce.jar to ant/lib
 RUN cp /force_tool/ant-salesforce.jar /usr/share/ant/lib
